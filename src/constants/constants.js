@@ -1,0 +1,17 @@
+export const USER_ROLES = {
+    SUPER_ADMIN: 1,
+    BIDDER: 2,
+};
+
+
+
+export const OTP_TYPES = {
+    REGISTER: "REGISTER",
+    LOGIN: "LOGIN",
+    RESET_PASSWORD: "RESET_PASSWORD",
+    VERIFY_EMAIL: "VERIFY_EMAIL",
+    VERIFY_PHONE: "VERIFY_PHONE",
+    TENDER_AUTH: "TENDER_AUTH"
+};
+
+

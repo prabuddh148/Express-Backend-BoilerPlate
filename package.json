@@ -1,0 +1,42 @@
+{
+  "name": "gv-bidder-crm-backend",
+  "version": "1.0.0",
+  "description": "This backend is a production-ready Node.js project built using:",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js",
+    "start:node": "node server.js",
+    "migrate": "node migration.mjs",
+    "seed": "node seeder.mjs",
+    "db:sync": "npm run migrate && npm run seed",
+    "migration:create": "sequelize-cli migration:generate --name",
+    "seed:create": "sequelize-cli seed:generate --name"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.15.3",
+    "sanitize-html": "^2.17.0",
+    "sequelize": "^6.37.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "umzug": "^3.2.1",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

@@ -1,0 +1,69 @@
+# ---------------------------
+# Node & npm
+# ---------------------------
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*      # for .env.development, .env.production, etc.
+
+# Logs
+logs/
+*.log
+log/
+debug.log
+error.log
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Build & dist output
+dist/
+build/
+
+# Sequelize auto-generated files
+src/config/config.json
+
+# macOS
+.DS_Store
+
+# Linux
+.Trash-*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# IDE / Editor Configs
+.vscode/
+.idea/
+*.swp
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Optional: Ignore uploads folder if your project stores media
+uploads/
+
+# Optional: Ignore SQLite if using mysql/postgres in dev
+*.sqlite
+*.sqlite3
+
+# TypeScript (if you ever add TS)
+*.tsbuildinfo
+
+# PM2 Logs
+.pids
+*.pid
+*.seed
+*.pid.lock
+
+# ESLint cache
+.eslintcache
